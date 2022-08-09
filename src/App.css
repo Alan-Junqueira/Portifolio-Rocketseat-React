@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather+Sans:wght@300;400;500;700&display=swap');
+
+:root {
+  --body-bg-color: hsl(245, 14%, 15%);
+  --text-color: hsl(249, 15%, 56%);
+  --bg-cards: hsl(244, 13%, 21%);
+  --bg-techs: hsl(327, 35%, 68%);
+  --margin-perfil: hsl(120, 100%, 50%);
+  --bg-language: hsl(55, 70%, 69%);
+  --bg-langHtml: hsl(40, 100%, 50%);
+  --bg-langCss: hsl(215, 100%, 50%);
+}
+
+html {
+  background: var(--body-bg-color);
+}
+
+* {
+  box-sizing: border-box;
+  font-size: 62.5%; /* 1rem = 10px */
+}
+
+h1,
+h2,
+h3,
+h4,
+p {
+  margin: 0px;
+}
+
+ul,
+li {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button,
+input {
+  display: block;
+  font-size: 1rem;
+  font-family: var(--type-first);
+}
+
+a {
+  text-decoration: none;
+}
+
+.App {
+  background: var(--body-bg-color);
+  padding: 4rem 4rem 2rem 4rem;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 34.8rem 1fr;
+}
+
+.Titulo {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  /* identical to box height */
+
+  color: var(--text-color);
+}
+
+.Card {
+  background: var(--bg-cards);
+  box-shadow: 0.2px 0.2px 0.2px 0.1px rgba(0, 0, 0, 0.2);
+  border-radius: 2rem;
+}

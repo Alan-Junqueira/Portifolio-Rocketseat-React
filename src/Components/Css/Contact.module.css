@@ -1,0 +1,33 @@
+.contact {
+  grid-column: 1/2;
+  grid-area: aside;
+  max-width: 35rem;
+
+  padding: 3rem 0 1.4rem 4rem;
+  margin-top: 3rem;
+}
+
+.contact li {
+  display: flex;
+  margin-bottom: 2rem;
+  align-items: center;
+}
+
+.contact svg {
+  width: 2.4rem;
+  height: 2.4rem;
+
+  margin-right: 2rem;
+  color: var(--text-color);
+}
+
+.contact p,
+.contact a {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+
+  color: var(--text-color);
+}

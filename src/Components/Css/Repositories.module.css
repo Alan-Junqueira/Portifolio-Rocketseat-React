@@ -1,0 +1,157 @@
+.Repositories {
+  grid-column: 2/4;
+  grid-area: main;
+
+  margin-left: 6rem;
+  margin-top: 3rem;
+
+  display: flex;
+  justify-content: space-between;
+}
+
+.repoUl {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.repositoriesLi {
+  padding: 3rem;
+  width: 48%;
+  margin-bottom: 3rem;
+}
+
+.repository {
+  display: flex;
+  align-items: center;
+}
+
+.repository svg {
+  color: var(--text-color);
+  margin-right: 1.6rem;
+}
+
+.repository h3 {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.6rem;
+  line-height: 2rem;
+
+  color: var(--text-color);
+}
+
+.description {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 2rem;
+
+  color: var(--text-color);
+
+  padding: 2.2rem 0 2.2rem 0;
+}
+
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.starBranch {
+  display: flex;
+  align-items: center;
+}
+
+.starBranch svg {
+  color: var(--text-color);
+  margin-right: 0.8rem;
+}
+
+.starBranch p {
+  color: var(--text-color);
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  margin-right: 1.6rem;
+
+  color: var(--text-color);
+}
+.languageJavaScript {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  color: var(--text-color);
+  position: relative;
+}
+
+.languageJavaScript::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  top: 0.1rem;
+  left: -2rem;
+
+  background: var(--bg-language);
+  border: 2px solid var(--text-color);
+
+  position: absolute;
+}
+
+.languageHtml {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  color: var(--text-color);
+  position: relative;
+}
+
+.languageHtml::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  top: 0.1rem;
+  left: -2rem;
+
+  background: var(--bg-langHtml);
+  border: 2px solid var(--text-color);
+
+  position: absolute;
+}
+
+.languageCss {
+  font-family: 'Merriweather Sans'; 
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  color: var(--text-color);
+  position: relative;
+}
+
+.languageCss::before {
+  content: '';
+  width: 0.8rem;
+  height: 0.8rem;
+  border-radius: 50%;
+  top: 0.1rem;
+  left: -2rem;
+
+  background: var(--bg-langCss);
+  border: 2px solid var(--text-color);
+
+  position: absolute;
+}

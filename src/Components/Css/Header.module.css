@@ -1,0 +1,32 @@
+.Header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  margin-left: 6rem;
+  padding-inline: 3rem;
+  height: 8.6rem;
+}
+
+.titulo {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 2rem;
+  line-height: 2.5rem;
+  /* identical to box height */
+
+  color: var(--text-color);
+  white-space: nowrap;
+}
+
+.seeMore {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+  /* identical to box height */
+
+  color: var(--text-color);
+}

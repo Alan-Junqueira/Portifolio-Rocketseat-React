@@ -1,0 +1,42 @@
+.Perfil {
+  grid-column: 1/2;
+  grid-area: aside;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  max-width: 35rem;
+
+  padding: 3.2rem 7.6rem 4.9rem 7.6rem;
+}
+
+.img {
+  max-width: 12.8rem;
+  max-height: 12.8rem;
+  border-radius: 50%;
+  border: 2px solid var(--margin-perfil);
+
+  margin-bottom: 3rem;
+}
+
+.name {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 23px;
+  line-height: 29px;
+
+  color: var(--text-color);
+}
+
+.bio {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 13px;
+  line-height: 16px;
+  /* identical to box height */
+
+  color: var(--text-color);
+}

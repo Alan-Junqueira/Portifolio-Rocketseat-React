@@ -1,0 +1,62 @@
+.Educacao {
+  grid-column: 1/2;
+  grid-area: aside;
+
+  margin-top: 3rem;
+  padding: 3rem 0 1.5rem 2rem;
+}
+
+.titulo {
+  margin-bottom: 2rem;
+}
+
+.ul {
+  margin-left: 4rem;
+}
+
+.lista {
+  position: relative;
+  margin-bottom: 1.5rem;
+}
+
+.lista::before {
+  content: '';
+  position: absolute;
+  width: 0.4rem;
+  height: 0.4rem;
+  background: var(--text-color);
+  border-radius: 50%;
+
+  top: 0.5rem;
+  left: -1.5rem;
+}
+
+.instituicao {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 1.4rem;
+  line-height: 1.8rem;
+
+  color: var(--text-color);
+}
+
+.periodo {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 300;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  color: var(--text-color);
+}
+
+.funcao {
+  font-family: 'Merriweather Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 1.2rem;
+  line-height: 1.5rem;
+
+  color: var(--text-color);
+}
