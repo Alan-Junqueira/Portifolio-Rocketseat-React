@@ -1,12 +1,13 @@
 import React from 'react';
 import styles from './Css/RecentPosts.module.css';
 import { UserContext } from '../UserContext';
-import { dateSubtration } from '../Hooks/DateSubtraction';
+import { dateSubtration } from '../Hooks/dateSubtraction';
 
 const RecentPosts = () => {
-  const { repositories } = React.useContext(UserContext);
+  const { repositories, data } = React.useContext(UserContext);
   const regexDescription = /(#(\w*)\s*)/gm;
   const regexHashTag = /.*(\w+)(?= #)/gm;
+
 
   return (
     <section className={`Card ${styles.RecentPosts}`}>

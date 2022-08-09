@@ -1,7 +1,7 @@
-export function dateSubtration(data) {
-  const dataRepositorio = new Date(data);
-  const dataAgora = new Date();
-  const TimePassed = dataAgora - dataRepositorio;
+export function dateSubtration(date) {
+  const dataRepositorio = new Date(date);
+  const dateNow = new Date(); 
+  const TimePassed = dateNow - dataRepositorio;
 
   //                ms           s      m    h    d
   const days = TimePassed / 1000 / 60 / 60 / 24;
@@ -18,19 +18,3 @@ export function dateSubtration(data) {
     : `Postado a ${passedDays} dia ${passedHours}:${passedMinutes}:${passedSeconds}`;
 }
 
-// export function DateFormatter() {
-//   function zeroFill(n) {
-//     return n < 9 ? `0${n}` : `${n}`;
-//   }
-//   function formatDate(date) {
-//     const d = zeroFill(date.getDate());
-//     const mo = zeroFill(date.getMonth());
-//     const y = zeroFill(date.getFullYear());
-//     const h = zeroFill(date.getHours());
-//     const mi = zeroFill(date.getMinutes());
-//     const s = zeroFill(date.getSeconds());
-//     return `${d}/${mo}/${y} ${h}:${mi}:${s}`;
-//   }
-//   const formatedRepositoryDate = formatDate(dataRepositorio)
-//   const formatedNowDate = formatDate(dataAgora)
-// }

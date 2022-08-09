@@ -7,12 +7,13 @@ export const UserStorage = ({ children }) => {
   const [response, setResponse] = React.useState(null);
   const [repositories, setRepositories] = React.useState(null);
 
-  async function getUser() {
+  async function getUserData() {
     const url = 'https://api.github.com/users/alan-junqueira';
     const response = await fetch(url);
     const json = await response.json();
 
     const { repos_url } = json;
+
     const fetchRepositories = await fetch(repos_url);
     const jsonRepositories = await fetchRepositories.json();
 
@@ -20,7 +21,8 @@ export const UserStorage = ({ children }) => {
     setResponse(response);
     setRepositories(jsonRepositories);
   }
-  getUser();
+
+  getUserData();
 
   if (data === null) return null;
   else
