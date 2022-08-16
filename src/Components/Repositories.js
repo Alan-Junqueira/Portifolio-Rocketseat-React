@@ -16,26 +16,36 @@ const Repositories = () => {
         {repositories.map((repo) => (
           <li id={repo.id} className={`Card ${styles.repositoriesLi}`}>
             <div className={styles.repository}>
-              <Folder />
-              <h3>{repo.name}</h3>
+              <a href={repo.html_url} target="_blank" rel="noreferrer">
+                <Folder />
+              </a>
+              <a href={repo.html_url} target="_blank" rel="noreferrer">
+                <h3>{repo.name}</h3>
+              </a>
             </div>
 
             <div className={styles.description}>
-              <p>{repo.description}</p>
+              <p className={styles.maxLines}>{repo.description}</p>
             </div>
 
             <div className={styles.footer}>
               <div>
                 <div className={styles.starBranch}>
-                  <Star />
+                  <Star/>
                   <p>100</p>
-                  <GitBranch />
-                  <p>100</p>
+                  <GitBranch className={styles.hidden}/>
+                  <p className={styles.hidden}>100</p>
                 </div>
               </div>
-              {repo.language === 'JavaScript' ? <div className={styles.languageJavaScript}>{repo.language}</div> : null}
-              {repo.language === 'HTML' ? <div className={styles.languageHtml}>{repo.language}</div> : null}
-              {repo.language === 'CSS' ? <div className={styles.languageCss}>{repo.language}</div> : null}
+              {repo.language === 'JavaScript' ? (
+                <div className={styles.languageJavaScript}>{repo.language}</div>
+              ) : null}
+              {repo.language === 'HTML' ? (
+                <div className={styles.languageHtml}>{repo.language}</div>
+              ) : null}
+              {repo.language === 'CSS' ? (
+                <div className={styles.languageCss}>{repo.language}</div>
+              ) : null}
             </div>
           </li>
         ))}

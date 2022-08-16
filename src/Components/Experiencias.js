@@ -42,7 +42,7 @@ const minhasExperiencias = [
     empresa: 'Evian Thermas Residence',
     funcao: 'Supervisor de Captação',
     entrada: 2022,
-    saida: 'Atualmente'
+    saida: 2022
   }
 ];
 

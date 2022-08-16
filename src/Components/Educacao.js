@@ -7,14 +7,14 @@ const estudos = [
     instituicao: 'Rocketseat',
     inicio: '2022',
     fim: '2022',
-    curso: 'Conectar'
+    curso: ' Trilha Conectar'
   },
   {
     id: 2,
     instituicao: 'Rocketseat',
     inicio: '2022',
     fim: '2022',
-    curso: 'Fundamentar'
+    curso: 'Trilha Fundamentar'
   },
   {
     id: 3,
@@ -36,6 +36,13 @@ const estudos = [
     inicio: '2022',
     fim: '2022',
     curso: 'CSS Avançado Posicionamento'
+  },
+  {
+    id: 6,
+    instituicao: 'Up Time',
+    inicio: '2016',
+    fim: '2017',
+    curso: 'Curso de Inglês'
   }
 ];
 

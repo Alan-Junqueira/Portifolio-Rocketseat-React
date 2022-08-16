@@ -1,6 +1,5 @@
 .Repositories {
   grid-column: 2/4;
-  grid-area: main;
 
   margin-left: 6rem;
   margin-top: 3rem;
@@ -9,6 +8,18 @@
   justify-content: space-between;
 }
 
+@media (max-width: 1260px) {
+  .Repositories {
+    margin-left: 3rem;
+  }
+}
+
+@media (max-width: 430px) {
+  .Repositories {
+    margin-inline: 1rem;
+    margin-top: 1rem;
+  }
+}
 .repoUl {
   display: flex;
   flex-wrap: wrap;
@@ -19,6 +30,18 @@
   padding: 3rem;
   width: 48%;
   margin-bottom: 3rem;
+}
+
+@media (max-width: 1260px) {
+  .repositoriesLi {
+    width: 100%;
+  }
+}
+
+@media (max-width: 430px) {
+  .repositoriesLi {
+    margin-bottom: 1rem;
+  }
 }
 
 .repository {
@@ -81,6 +104,13 @@
 
   color: var(--text-color);
 }
+
+@media (max-width: 820) {
+  .starBranch p {
+    margin-right: 0.5rem !important;
+  }
+}
+
 .languageJavaScript {
   font-family: 'Merriweather Sans';
   font-style: normal;
@@ -132,7 +162,7 @@
 }
 
 .languageCss {
-  font-family: 'Merriweather Sans'; 
+  font-family: 'Merriweather Sans';
   font-style: normal;
   font-weight: 400;
   font-size: 1.4rem;
@@ -154,4 +184,18 @@
   border: 2px solid var(--text-color);
 
   position: absolute;
+}
+
+@media (max-width: 805px) {
+  .hidden {
+    display: none;
+  }
+
+  .maxLines {
+    overflow: hidden; /* remove o estouro do elemento */
+    text-overflow: ellipsis; /* adiciona “...” no final */
+    display: -webkit-box;
+    -webkit-line-clamp: 2; /* quantidade de linhas */
+    -webkit-box-orient: vertical; /* conteúdo será apresentado verticalmente */
+  }
 }

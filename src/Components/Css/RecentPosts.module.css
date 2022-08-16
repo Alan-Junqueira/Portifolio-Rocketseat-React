@@ -1,8 +1,6 @@
 .RecentPosts {
   margin-top: 3rem;
-  margin-left: 6rem;
   padding: 3rem 0 3rem 3rem;
-
   display: flex;
   align-items: center;
   justify-content: flex-start;
@@ -58,4 +56,15 @@
 
   color: var(--text-color);
   margin-top: 1rem;
+}
+
+@media (max-width: 430px) {
+  .RecentPosts {
+    margin-top: 1rem;
+    margin-right: 1rem;
+  }
+
+  .branchOff {
+    display: none;
+  }
 }

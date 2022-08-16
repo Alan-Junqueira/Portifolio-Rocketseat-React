@@ -11,21 +11,25 @@ import Tecnologias from './Tecnologias';
 
 const Home = () => {
   return (
-    <div className="container">
-      <aside>
-        <Perfil />
-        <Contact />
-        <Tecnologias />
-        <Experiencias />
-        <Educacao />
-      </aside>
-      <main>
-        <Header />
-        <Repositories />
-        <Recent />
-        <RecentPosts />
-      </main>
-    </div>
+    <>
+      <div className="container">
+        <aside>
+          <Perfil />
+          <Contact />
+          <Tecnologias />
+          <Experiencias />
+          <Educacao />
+        </aside>
+        <main>
+          <Header />
+          <Repositories />
+        </main>
+        <div className="RecentPosts">
+          <Recent />
+          <RecentPosts />
+        </div>
+      </div>
+    </>
   );
 };
 
