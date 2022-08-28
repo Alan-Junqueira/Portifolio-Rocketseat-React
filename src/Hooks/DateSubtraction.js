@@ -15,5 +15,5 @@ export function dateSubtration(date) {
   const passedSeconds = Math.floor(seconds % 60);
   return passedDays > 1
     ? `Postado a ${passedDays} dias ${passedHours}:${passedMinutes}:${passedSeconds}`
-    : `Postado a ${passedHours}:${passedMinutes}:${passedSeconds}}`;
+    : `Postado a ${passedHours}:${passedMinutes}:${passedSeconds}`;
 }

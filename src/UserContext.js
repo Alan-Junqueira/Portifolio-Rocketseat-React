@@ -21,8 +21,9 @@ export const UserStorage = ({ children }) => {
     setResponse(response);
     setRepositories(jsonRepositories);
   }
-
-  getUserData();
+  React.useEffect(() => {
+    getUserData();
+  }, []);
 
   if (data === null) return null;
   else
