@@ -1,6 +1,6 @@
 import React from 'react';
-import { UserContext } from '../UserContext';
-import styles from './Css/Perfil.module.css';
+import { UserContext } from '../../UserContext';
+import styles from './styles.module.css';
 
 const Perfil = () => {
   const { data } = React.useContext(UserContext);

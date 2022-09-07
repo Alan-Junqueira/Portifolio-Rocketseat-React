@@ -1,13 +1,14 @@
 import React from 'react';
-import Contact from './Contact';
-import Educacao from './Educacao';
-import Experiencias from './Experiencias';
-import Header from './Header';
-import Perfil from './Perfil';
-import Recent from './Recent';
-import RecentPosts from './RecentPosts';
-import Repositories from './Repositories';
-import Tecnologias from './Tecnologias';
+import Perfil from '../../Components/Perfil'
+import Contact from '../../Components/Contact'
+import Tecnologias from '../../Components/Tecnologias'
+import Experiencias from '../../Components/Experiencias'
+import Educacao from '../../Components/Educacao'
+import Header from '../../Components/Header'
+import Repositories from '../../Components/Repositories'
+import Recent from '../../Components/Recent'
+import RecentPosts from '../../Components/RecentPosts'
+
 
 const Home = () => {
   return (

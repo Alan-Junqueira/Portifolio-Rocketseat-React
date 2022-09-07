@@ -199,3 +199,37 @@
     -webkit-box-orient: vertical; /* conteúdo será apresentado verticalmente */
   }
 }
+
+svg {
+  width: 3rem;
+  height: 3rem;
+}
+
+.reactLogo {
+  color: #61dafb;
+}
+
+.javaScriptLogo {
+  color: #f7df1e;
+}
+.cssThreeLogo {
+  color: #1572b6;
+}
+.gitLogo {
+  color: #f05032;
+}
+.GithubLogo {
+  color: #181717;
+}
+.html5Logo {
+  color: #e34f26;
+}
+.sassLogo {
+  color: #cc6699;
+}
+.typescriptLogo {
+  color: #3178c6;
+}
+.nextDotJsLogo {
+  color: #000000;
+}

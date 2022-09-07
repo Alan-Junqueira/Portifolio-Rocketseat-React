@@ -1,0 +1,67 @@
+.Tecnologias {
+  grid-column: 1/2;
+  grid-area: aside;
+  margin-top: 3rem;
+
+  max-width: 35rem;
+
+  padding: 3rem 3rem 3rem 2rem;
+}
+
+@media (max-width: 430px) {
+  .Tecnologias {
+    margin-top: 1rem;
+  }
+}
+
+.Titulo {
+  margin-bottom: 2rem;
+}
+
+.Lista {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  justify-content: space-between;
+  gap: 1.5rem;
+}
+
+.Lista svg {
+  display: block;
+  width: 3.5rem;
+  height: 3.5rem;
+}
+
+.Lista li {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.reactLogo {
+  color: #61dafb;
+}
+
+.javaScriptLogo {
+  color: #f7df1e;
+}
+.cssThreeLogo {
+  color: #1572b6;
+}
+.gitLogo {
+  color: #f05032;
+}
+.GithubLogo {
+  color: #181717;
+}
+.html5Logo {
+  color: #e34f26;
+}
+.sassLogo {
+  color: #cc6699;
+}
+.typescriptLogo {
+  color: #3178c6;
+}
+.nextDotJsLogo {
+  color: #000000;
+}

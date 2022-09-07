@@ -1,13 +1,13 @@
 import React from 'react';
-import { UserContext } from '../UserContext';
-import styles from './Css/Contact.module.css';
-import { ReactComponent as Pin } from '../assets/map-pin.svg';
-import { ReactComponent as Wallet } from '../assets/briefcase.svg';
-import { ReactComponent as Github } from '../assets/github.svg';
-import { ReactComponent as Linkedin } from '../assets/linkedin.svg';
-import { ReactComponent as Twitter } from '../assets/twitter.svg';
-import { ReactComponent as Globe } from '../assets/globe.svg';
-import { ReactComponent as Mail } from '../assets/mail.svg';
+import { UserContext } from '../../UserContext';
+import styles from './styles.module.css';
+import { ReactComponent as Pin } from '../../assets/map-pin.svg';
+import { ReactComponent as Wallet } from '../../assets/briefcase.svg';
+import { ReactComponent as Github } from '../../assets/github.svg';
+import { ReactComponent as Linkedin } from '../../assets/linkedin.svg';
+import { ReactComponent as Twitter } from '../../assets/twitter.svg';
+import { ReactComponent as Globe } from '../../assets/globe.svg';
+import { ReactComponent as Mail } from '../../assets/mail.svg';
 
 const Contact = () => {
   const { data } = React.useContext(UserContext);

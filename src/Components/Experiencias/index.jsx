@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from './Css/Experiencias.module.css';
+import styles from './styles.module.css';
 
 const minhasExperiencias = [
   {

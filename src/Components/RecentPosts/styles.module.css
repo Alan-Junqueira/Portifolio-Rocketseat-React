@@ -6,7 +6,7 @@
   justify-content: flex-start;
 }
 
-.divImg img {
+img {
   max-width: 12.8rem;
   max-height: 12.8rem;
   border-radius: 50%;
